@@ -38,7 +38,12 @@
             grid-column: 2 / -1;
         }
      }
-    
+     .portfolio__data .portfolio__data--image{
+         transition: none;
+     }
+     .portfolio__data .portfolio__data--image:hover{
+         transform: none;
+     }
      .testimonials{
         height:25rem;
         max-height:25rem;

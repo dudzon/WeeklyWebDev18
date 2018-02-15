@@ -116,6 +116,12 @@
             display: none;
         }
     }
+    .portfolio__data .portfolio__data--image{
+        transition: none;
+    }
+    .portfolio__data .portfolio__data--image:hover{
+        transform: none;
+    }
     .experience .experience__data--job .experience__data--role,
     .experience .experience__data--job .experience__data--role-right{
         font-size:1.2rem;
@@ -160,5 +166,8 @@
     }
     .message .message__box {
         max-width:40rem;
+    }
+    .mobile__nav{
+        display:block;
     }
  }

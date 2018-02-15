@@ -1,7 +1,9 @@
 /*==========================
         GENERAL 
 ============================*/
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: $fontFamily;
     box-sizing: border-box;
@@ -545,9 +547,13 @@ progress[value] {
     &--image {
         max-width: 100%;
         overflow: hidden;
+        transition: transform 1s;
         img {
             max-width: 100%;
             max-height: 100%;
+        }
+        &:hover{
+            transform:  scale(1.2) translate(5%,5%) ;
         }
     }
     &--list {
@@ -559,8 +565,9 @@ progress[value] {
             font-weight: 700;
             color: #4d4d4d;
             margin-bottom: 1.7rem;
+            cursor:pointer;
         }
-        &-item:first-child {
+        &-item:hover {
             color: #c714d5;
         }
     }
@@ -923,6 +930,7 @@ progress[value] {
     top: 0;
     left: 0;
     z-index: 1;
+    display:none;
     
     .mobile__nav--checkbox{
       position: absolute;
