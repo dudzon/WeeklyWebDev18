@@ -51,6 +51,25 @@ body {
                 font-weight: 600;
                 text-decoration: none;
                 line-height: 1.25;
+                position:relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    z-index: 9999;
+                    bottom: -.15rem;
+                    left: 0;
+                    width: 0;
+                    height: 2px;
+                    background: darken(#FEFEFE,10%);
+                    transition: width 0.4s ease;
+                }
+                &:hover {
+                    color: darken(#FEFEFE,20%);
+                    
+                    &:after {
+                      width: 100%;
+                    }
+                  }
             }
         }
     }
@@ -59,6 +78,7 @@ body {
 .svg-inline--fa.fa-minus {
     width: 0.5rem;
     margin-left: 1.875rem;
+    color:#fff;
 }
 
 
@@ -133,6 +153,28 @@ body {
             letter-spacing: 0.2rem;
             outline: 0;
             font-family: 'Roboto', sans-serif;
+            position: relative;
+            transition: all 1s;
+            &:after{
+                content: '';
+                position: absolute;
+                width: 100%; 
+                height:100%;
+                top:0; 
+                left:0;
+                background:linear-gradient(41deg, #c098d8 0%, #d86498 100%);
+                opacity: 0;
+                transition: all 0.5s;
+                border:none;
+                outline:0;
+                border-radius:5px;
+            }
+            &:hover{
+                color: rgb(27, 3, 3);
+                &:after{
+                opacity:.5;
+                }
+            }
         }
     }
     /* End of nesting inside .header */
@@ -827,6 +869,29 @@ progress[value] {
                 margin: 0 auto;
                 font-weight: 500;
                 text-shadow: 2px 2px 0 0;
+                position: relative;
+                transition: all 1s;
+                &:after{
+                    content: '';
+                    position: absolute;
+                    width: 100%; 
+                    height:100%;
+                    top:0; 
+                    left:0;
+                    background:linear-gradient(41deg, #c098d8 0%, #d86498 100%);
+                    opacity: 0;
+                    transition: all 0.5s;
+                    border:none;
+                    outline:0;
+                    border-radius:5px;
+                }
+                &:hover{
+                    color: rgb(27, 3, 3);
+                    &:after{
+                    opacity:.5;
+                    }
+                }
+                
             }
         }
         /* End of nesting in .message__box--form */
@@ -995,15 +1060,15 @@ progress[value] {
           
           > ul {
             list-style: none;
-            padding: 0 1em;
+            padding: 0 1.6rem;
             margin: 0;
             display: block;
             max-height: 100vh;
             
             > li {
               padding: 0;
-              margin: 1em;
-              font-size: 24px;
+              margin: 1.6rem;
+              font-size: 2rem;
               display: block;
               
               > a {
