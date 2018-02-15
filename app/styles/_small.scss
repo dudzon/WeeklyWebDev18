@@ -1,0 +1,138 @@
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    html{
+        font-size:11px;
+    }
+    .header{
+        background: rgb(35, 45, 80) url('../images/header-bg-5.png') no-repeat center;
+        background-size:cover;
+    }
+    .header .header__wrapper--text .header-text--highlight{
+        font-size:12rem;
+    }
+    .header .header__wrapper--desc{
+        font-size:2rem;
+    }
+    .header .header__wrapper .header__button{
+        padding:2rem 2.5rem;
+        line-height: .5rem;
+    }
+    .main__container,
+    .navigation__wrapper{
+        @include centerWidth(small);
+     }
+     .svg-inline--fa.fa-minus {
+        display: none;
+    }
+     .designerInfo{
+        grid-template-columns:2fr 1fr;
+        background: none;
+        max-height: 31rem;
+        .designerInfo__container{
+            justify-self:start;
+            .designerInfo__about{
+            margin-top: 5rem;
+            }
+            .designerInfo__desc {
+                line-height: 1.5;
+                margin-top:-1rem;
+            }
+        }
+        .designerInfo__skills{
+            grid-column: 2 / -1;
+            margin-top: 5rem;
+        }
+     }
+     .contactInfo .contactInfo__data--container .data--icon-container{
+            width:4rem;
+            height:4rem;
+            .fa-mobile-alt,
+            .fa-map-marker-alt,
+            .fa-envelope-square{
+                font-size:1.5rem;
+            }
+     }
+     .contactInfo .contactInfo__data--container {
+         margin-top:2rem;
+
+        .contactInfo__data--phone-title,
+        .contactInfo__data--address-title,
+        .contactInfo__data--email-title {
+            grid-area:title;
+            padding-top: 1rem;
+        }
+        .contactInfo__data--phone-details,
+        .contactInfo__data--address-details,
+        .contactInfo__data--email-details {
+            grid-column: 1 /3;
+            justify-self: center;
+            padding-top:1.2rem;
+        }
+        .contactInfo__data--address-details{
+            padding-top:2.5rem;
+        }
+     }
+     .services {
+         margin-bottom:0;
+            .services__data{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+            "header    header    "
+            "service_1 service_2 "
+            "service_3 service_4 "
+            "service_5 service_6 ";
+            }
+        }
+     .testimonials{
+        display:none;
+    }
+    .portfolio__data{
+        grid-template-columns: 12.5rem 17rem 17rem;
+        grid-auto-rows: 12rem;
+        grid-gap:.625rem 0;
+        &--image {
+            max-width: 100%;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+        .portfolio__data--list{
+            -webkit-padding-start: 0;
+            &-item{
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+    .experience .experience__data--job .experience__data--role,
+    .experience .experience__data--job .experience__data--role-right{
+        font-size:1.2rem;
+        text-align: initial;
+    }
+    .experience{
+        height:65rem;
+    }
+    .experience .experience__data--desc::after,
+    .experience .experience__data--desc-right::after{
+        border:none;
+    }
+    .experience .experience__data--job .experience__data--role-right-p{
+        padding-left: initial;
+    }
+    .experience .experience__data--job p{
+        text-align: initial;
+        padding-right: initial;
+    }
+    .experience .experience__data--desc{
+        padding-left:2.125rem;
+    }
+    .experience .experience__data--desc-right{
+        padding-right: 2.125rem;
+    }
+    .blog .blog__header{
+        margin-top:-2rem;
+    }
+    .message .message__box {
+        max-width:48rem;
+    }
+ }

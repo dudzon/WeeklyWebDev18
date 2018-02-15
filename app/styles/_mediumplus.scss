@@ -1,0 +1,21 @@
+@media (min-width: 768px) and (max-width: 900px){
+    .portfolio__data{
+        grid-template-columns: 12.5rem 17rem 17rem;
+        grid-auto-rows: 12rem;
+        grid-gap:.625rem 0;
+        &--image {
+            max-width: 100%;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+        .portfolio__data--list{
+            -webkit-padding-start: 0;
+            &-item{
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+
+}

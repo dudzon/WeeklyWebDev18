@@ -1,0 +1,20 @@
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    html{
+        font-size:14px;
+    }
+    .main__container,
+    .navigation__wrapper{
+        @include centerWidth(large);
+     }
+     .svg-inline--fa.fa-minus {
+         display: none;
+     }
+     .testimonials{
+         height:28.57rem;
+         max-height:28.57rem;
+     }
+     .designerInfo{
+        background: url('../images/designer-lg.png') no-repeat center;
+     }
+}

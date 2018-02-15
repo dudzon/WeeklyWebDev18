@@ -1,0 +1,164 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    html{
+        font-size:10px;
+    }
+    .navigation .navigation__list{
+        display:none;
+    }
+    .header{
+        background: rgb(35, 45, 80) url('../images/header-bg-6.png') no-repeat center;
+        background-size:cover;
+        padding-top:0;
+        padding-bottom:12vh;
+    }
+    .header .header__wrapper--text {
+        margin-top:-10rem;
+    }
+
+    .header .header__wrapper--text .header-text--highlight{
+        font-size:10rem;
+        margin:2rem 0;
+    }
+    .header .header__wrapper--desc{
+        font-size:2rem;
+    }
+    .header .header__wrapper .header__button{
+        padding:2rem 2.5rem;
+        line-height: .5rem;
+    }
+    .main__container,
+    .navigation__wrapper{
+        @include centerWidth(smaller);
+     }
+     .svg-inline--fa.fa-minus {
+        display: none;
+    }
+     .designerInfo{
+       display: flex;
+       justify-content: center;
+       background:none;
+       max-height:30rem;
+        .designerInfo__container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: -10rem;
+            .designerInfo__about{
+            font-size:2.8rem;
+            }
+            .designerInfo__desc {
+                line-height: 1.6;
+                text-align: initial;
+            }
+        }
+        .designerInfo__skills{
+            display: none;
+        }
+     }
+     .contactInfo .contactInfo__data--container .data--icon-container{
+            width:4rem;
+            height:4rem;
+            .fa-mobile-alt,
+            .fa-map-marker-alt,
+            .fa-envelope-square{
+                font-size:1.5rem;
+            }
+     }
+     .contactInfo .contactInfo__data--container {
+        //  width:70%;
+         margin-top:2rem;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+        .contactInfo__data--phone-title,
+        .contactInfo__data--address-title,
+        .contactInfo__data--email-title {
+           display: none;
+        }
+        .contactInfo__data--address-details{
+            padding-top:initial;
+            padding-right: 2rem;
+            margin-left: 2rem;
+        }
+     }
+     .services {
+         margin-bottom:0;
+         max-height:110rem;
+            .services__data{
+           display: block;
+                &--container{
+                    margin-top:2rem;
+                }
+            }
+        }
+     .testimonials{
+        display:none;
+    }
+    .portfolio{
+        max-height: 200rem;
+    }
+    .portfolio__data{
+        display: block;
+        &--image {
+            display: block;
+            margin-top: 2rem;
+            img {
+                width: 25rem;
+                height: 18rem;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        .portfolio__data--list{
+            display: none;
+        }
+    }
+    .experience .experience__data--job .experience__data--role,
+    .experience .experience__data--job .experience__data--role-right{
+        font-size:1.2rem;
+        text-align: initial;
+    }
+    .experience{
+        height:75rem;
+        margin-top:41rem;
+    }
+    .experience .experience__data--desc::after,
+    .experience .experience__data--desc-right::after{
+        border:none;
+    }
+    .experience .experience__data--job .experience__data--role-right-p{
+        padding-left: initial;
+    }
+    .experience .experience__data--job p{
+        text-align: initial;
+        padding-right: initial;
+    }
+    .experience .experience__data--desc{
+        padding-left:2.125rem;
+    }
+    .experience .experience__data--desc-right{
+        padding-right: 2.125rem;
+    }
+    .blog .blog__header{
+        margin-top:-5rem;
+    }
+    .blog .blog__flex-container{
+        display: block; 
+         .blog__post{
+             max-width:100%;
+             margin:0 auto;
+             &--text{
+                 margin-bottom:2.5rem;
+             }
+         }
+    }
+    .message{
+        margin-top:25rem;
+    }
+    .message .message__box {
+        max-width:40rem;
+    }
+ }

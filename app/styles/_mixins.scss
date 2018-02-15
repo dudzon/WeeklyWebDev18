@@ -1,0 +1,57 @@
+@mixin icon_container {
+    display:block;
+    width:5rem;
+    height:5rem;
+    border-radius:50%;
+    position:relative;
+}
+@mixin icon_display{
+    position:absolute;
+    font-size:2rem;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+@mixin mainText{
+    text-transform:uppercase;
+    color:#fff;
+    font-size:2rem;
+}
+@mixin headerTextStyle{
+    margin:0;
+    padding:0;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+}
+
+
+@mixin centerWidth($point) {
+    
+    @if $point == smaller {
+      @media (max-width: 575.98px) { 
+        max-width:30rem;
+        margin:0 auto;}
+    }
+    @else if $point == small {
+      @media (min-width: 576px) and (max-width: 767.98px) { 
+        max-width:48rem;
+        margin:0 auto;}
+    }
+    @else if $point == medium {
+      @media (min-width: 768px) and (max-width: 991.98px)  {  
+            max-width:55.66rem;
+            margin:0 auto; }
+    }
+    @else if $point == large {
+        @media (min-width: 992px) and (max-width: 1199.98px){ 
+            max-width:63.71rem;
+            margin:0 auto;}
+    }
+    @else if $point == larger {
+        @media (min-width:1200px)  { 
+            max-width:68.75rem;
+            margin:0 auto;}
+    }
+    
+  }

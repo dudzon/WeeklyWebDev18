@@ -1,0 +1,63 @@
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    html{
+        font-size:12px;
+    }
+    .header{
+        background: rgb(35, 45, 80) url('../images/header-bg-4.png') no-repeat center;
+        background-size:cover;
+    }
+    .header .header__wrapper--text .header-text--highlight{
+        font-size:12rem;
+    }
+    .header .header__wrapper--desc{
+        font-size:2rem;
+    }
+    .header .header__wrapper .header__button{
+        padding:2rem 2.5rem;
+        line-height: .5rem;
+    }
+    .main__container,
+    .navigation__wrapper{
+        @include centerWidth(medium);
+     }
+     .svg-inline--fa.fa-minus {
+        display: none;
+    }
+     .designerInfo{
+        grid-template-columns:2fr 1fr;
+        background: none;
+        .designerInfo__container{
+            justify-self:center;
+            .designerInfo__desc {
+                line-height: 1.5;
+                margin-top:-1rem;
+            }
+        }
+        .designerInfo__skills{
+            grid-column: 2 / -1;
+        }
+     }
+    
+     .testimonials{
+        height:25rem;
+        max-height:25rem;
+    }
+    .testimonials .testimonials__data--paragraph{
+        white-space: pre-wrap;
+        width: 45%;
+    }
+    .message .message__box {
+        max-width:55rem;
+    }
+    .experience .experience__data--job .experience__data--role,
+    .experience .experience__data--job .experience__data--role-right{
+        font-size:1.2rem;
+    }
+    .experience{
+        height:58rem;
+    }
+    .blog .blog__header{
+        margin-top:-2rem;
+    }
+}
