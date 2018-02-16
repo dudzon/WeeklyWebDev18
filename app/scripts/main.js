@@ -78,4 +78,3 @@ window.addEventListener('scroll',throttle(smallerNavbar,200),false);/* Smaller m
 
 
 
-
