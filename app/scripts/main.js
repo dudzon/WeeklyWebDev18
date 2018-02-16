@@ -24,6 +24,7 @@ function calculateScrollHeight() {
 }
 
 // Helper function to calculate document height
+
 function getDocumentHeight(){
     const doc = document;
     return Math.max(doc.body.scrollHeight,
